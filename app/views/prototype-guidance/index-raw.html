@@ -1,0 +1,45 @@
+
+{% extends "layout.html" %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="../index">Back to main index</a>
+{% endblock %}
+
+<!-- Adds a class to increase vertical spacing for pages without a back button -->
+{% set mainClasses = "govuk-main-wrapper--l" %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <span class="govuk-caption-xl">Environmental Land Management</span>
+      <h1 class="govuk-heading-xl">Raw guidance
+      </h1>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+
+      <p>Guidance that has not had any content design input.</p>
+
+      <h2 class="govuk-heading-l">Arable notes</h2>
+
+      <span class="govuk-caption-m">These are the original versions of notes that have had CD input.</span>
+
+      <br>
+
+      <p><a href="guidance-raw/SO10C-pollen-and-nectar-plots-RAW">Create and maintain pollen and nectar plots</a></p>
+      
+      <p><a href="guidance-raw/SO15C-beetle-banks-RAW">Beetle banks</a></p>
+
+      <p><a href="guidance-raw/SO11C-supplementary-winter-bird-feeding-RAW">Supplementary winter bird feeding</a></p>
+
+
+
+    </div>
+</div>
+
+{% endblock %}
